@@ -82,12 +82,12 @@ BaseClient <- R6::R6Class(
   ),
 
   private = list(
-    #' Validate that a collection exists
-    #'
-    #' @param collection Collection ID to validate
-    #' @param available_collections Data frame of available collections
-    #' @param id_column Name of the ID column in available_collections
-    #' @return Logical indicating whether collection is valid
+    # Validate that a collection exists
+    #
+    # @param collection Collection ID to validate
+    # @param available_collections Data frame of available collections
+    # @param id_column Name of the ID column in available_collections
+    # @return Logical indicating whether collection is valid
     validate_collection = function(collection, available_collections, id_column) {
       if (!id_column %in% names(available_collections)) {
         cli::cli_abort("Invalid collection data structure")
@@ -96,11 +96,11 @@ BaseClient <- R6::R6Class(
       collection %in% available_collections[[id_column]]
     },
 
-    #' Validate that a metric exists
-    #'
-    #' @param metric Metric ID to validate
-    #' @param available_metrics Character vector of available metrics
-    #' @return Logical indicating whether metric is valid
+    # Validate that a metric exists
+    #
+    # @param metric Metric ID to validate
+    # @param available_metrics Character vector of available metrics
+    # @return Logical indicating whether metric is valid
     validate_metric = function(metric, available_metrics) {
       metric %in% available_metrics
     }
