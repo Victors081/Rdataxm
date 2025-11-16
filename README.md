@@ -7,7 +7,16 @@
 
 <!-- badges: end -->
 
-The goal of Rdataxm is to …
+## Overview
+
+Rdataxm provides a unified and intuitive interface for accessing
+Colombian energy market data from XM (SINERGOX) and SIMEM APIs. It
+includes functionality for retrieving time series data, metadata, and
+performing data normalization. Whether you’re analyzing spot prices,
+generation capacity, demand patterns, or hydroelectric contributions,
+Rdataxm handles the complexity of different API structures, metadata,
+and data formatting, allowing you to focus on analysis rather than data
+acquisition.
 
 ## Installation
 
